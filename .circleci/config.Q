@@ -10,13 +10,13 @@
 # - to try run jobs locally:
 #
 #     circleci config process .circleci/config.yml > tmp/processed.yml
-#     circleci local execute -c tmp/processed.yml --job build-nodejs-current
+#     circleci local execute -c tmp/processed.yml --bndrs21-nodejs-current
 #
 version: 2.1
 
 orbs:
   codecov: codecov/codecov@3.2.3
-  browser-tools: circleci/browser-tools@1.4.1
+  browser-tools: circleci/browser-tools@1.4.1 
 
 references:
   working_directory: &working_directory ~/webextension-polyfill
