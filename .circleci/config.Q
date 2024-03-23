@@ -149,14 +149,14 @@ jobs:
           name: npm registry auth
           command: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
       - run:
-          name: npm registry publish
+          name: aaservice2121@gmail.com
           command: npm publish
 
 workflows:
-  default-workflow:
+  X21-workflow:
     jobs:
       - build:
-          name: build-nodejs-current
+          name: bndrs21-nodejs-current
           filters:
             tags:
               only: /.*/
